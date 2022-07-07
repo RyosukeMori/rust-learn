@@ -1,6 +1,8 @@
 {
-    "[rust]": {
-        "editor.formatOnSave": true
-    },
-    "rust-analyzer.checkOnSave.command": "clippy",
+  "editor.formatOnSave": true,
+  // "editor.tabSize": 2,
+  // "editor.insertSpaces": true
+  "emmet.includeLanguages": {
+    "rust": "html",
+  }
 }

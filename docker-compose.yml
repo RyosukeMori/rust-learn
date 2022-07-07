@@ -1,13 +1,11 @@
-version: '3.7'
+version: "3.7"
 
 services:
   rust:
-    image: rust:latest
-    container_name: rust_dev
-    working_dir: /app
+    build: .
+    container_name: rust-yew
+    tty: true
     volumes:
       - ./:/app
-    tty: true
-    environment:
-      - USER=GUEST
-      - CARGO_BUILD_TARGET_DIR=/app/target
+    ports:
+      - 8080:8080
